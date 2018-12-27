@@ -1,0 +1,196 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  list-style: none;
+}
+.contWrap{
+  background: #e3f2fd;
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+}
+.contWrap .option{
+  width: 700px;
+  margin: 0 auto;
+  padding-top: 5px;
+}
+#number{
+  width: 60px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 18px;
+  color: #f40;
+
+}
+.contWrap .option .stsp{
+  width: 210px;
+  height: 60px;
+  display: inline-block;
+  margin-right: 30px;
+}
+#start, #stop{
+  border-radius: 3px;
+  display: inline-block;
+  width: 60px;
+  height: 40px;
+  background: #f40;
+  color: #fff;
+  line-height: 40px;
+  margin-right: 40px;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+#start:hover, #stop:hover{
+  background: #fff;
+  color: #f40;
+}
+.contWrap .option .sex{
+  width: 120px;
+  height: 24px;
+  display: inline-block;
+  border: 1px solid red;
+}
+.contWrap .option .sex .text{
+  display: inline-block;
+  font-size: 14px;
+  height: 30px;
+}
+.contWrap .option .cont{
+  display: inline-block;
+  margin-left: 30px;
+  height: 22px;
+  line-height: 22px;
+  width: 150px;
+}
+#scoreWrap{
+  position:fixed;display: block;right: 0;left: 0;top: 0;bottom: 0;background: pink;opacity: 0.9;
+}
+#scoreWrap .scoreBox{
+  width: 200px;height: 200px;margin: 0 auto;background: #eee;opacity: 1;margin-top: 250px;
+}
+#scoreWrap .scoreBox #addScore{
+  outline: none;border: none;border-radius: 3px;width: 180px;height: 30px; font-size: 14px;margin-left: 5px;margin-top: 40px;text-align: center;
+}
+/*.contWrap .option .cont span{
+  margin-right: 20px;
+}*/
+.contWrap .mainCont{
+  width: 750px;
+  background: #eee;
+  margin: 0 auto;
+  position: relative;
+}
+.contWrap .mainCont .left{
+  width: 430px;
+  display: inline-block;
+}
+.contWrap .mainCont .left .luckyStu{
+  width: 370px;
+  height: 220px;
+  text-align: center;
+  margin: 50px auto;
+}
+.mainCont .left .luckyStu .lkyName{
+  width: 320px;
+  height: 120px;
+  line-height: 120px;
+  font-size: 30px;
+  margin: 10px auto;
+  background: #fff;
+  border-radius: 3px;
+}
+.mainCont .left .luckyStu .lkyNo{
+  width: 300px;
+  height: 60px;
+  line-height: 60px;
+  background: #fff;
+  margin: 5px auto;
+  border-radius: 3px;
+}
+.mainCont .left .lkyScore{
+  width: 370px;
+  height: 200px;
+  margin: 0 auto;
+}
+.mainCont .left .lkyScore #finalScore{
+  width: 300px;
+  height: 100px;
+  line-height: 100px;
+  font-size: 30px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px auto;
+  background: #fff;
+  border-radius: 3px;
+}
+.mainCont .left .lkyScore .comment{
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  background: #f40;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.mainCont .left .lkyScore .comment:hover{
+  background: #fff;
+  color: #f40;
+}
+
+.contWrap .mainCont .right{
+  width: 305px;
+  display: inline-block;
+  position: absolute;
+  top: 50px;
+}
+.contWrap .mainCont .right .history{
+  width: 280px;
+  margin: 0 auto;
+}
+.right .history .answer{
+  background: #fff;
+  border-radius: 3px;
+}
+.right .history .answer span{
+  width: 130px;
+  height: 25px;
+  line-height: 25px; 
+  display: inline-block;
+  text-align: center;
+  margin-right: 6px;
+}
+#submitScore{
+  width: 90px;
+  height: 25px;
+  border-radius: 3px;
+  color: #fff;
+  line-height: 25px;
+  margin: 30px auto;
+  background: #f40;
+  text-align: center;
+  cursor: pointer;
+}
+#submitScore:hover{
+  background: #fff;
+  color: #f40;
+}
+#info{
+  width: 200px;
+  height: 45px;
+  margin: 25px auto;
+}
+#info span{
+  display: block;
+   width: 200px;
+   height: 20px;
+   line-height: 20px;
+   text-align: center; 
+   font-size: 18px; 
+   color: #fff;
+   margin-bottom: 10px;
+}

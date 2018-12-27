@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="index.css">
+	<script src="vue.js"></script>
+</head>
+<body>
+	<div class="contWrap" style="position: relative;">
+		<input type="checkbox" id="skiper" title="跳过评分" style="width: 40px; height: 40px; position: absolute;right: 5px;top: 5px;">
+		<div class="option">
+			<div class="stsp">
+				<div id="start">开始</div>
+				<div id="stop">结束</div>
+			</div>
+			<div class="sex">
+				<span style="margin-right: 20px;">
+					<input id="male" type="checkbox" value="男" checked="checked"><span class="text">男</span>
+				</span>
+				<span>
+					<input id="female" type="checkbox" value="女" checked="checked"><span class="text">女</span>
+				</span>
+			</div>
+			<div class="classNum" style="display:inline-block;border: 1px solid red;height:24px;">
+				<span style="margin-right: 20px;">
+					<input id="classOne" type="checkbox" value="1" checked="checked"><span class="text">一班</span>
+				</span>
+				<span>
+					<input id="classTwo" type="checkbox" value="2" checked="checked"><span class="text">二班</span>
+				</span>
+			</div>
+			<div class="cont">
+				<span>候选人数: </span>
+				<span id="number"></span>
+			</div>
+		</div>
+
+		<div class="mainCont">
+			<div class="left">
+				<div class="luckyStu">
+					<div class="lkyName"><!-- 示例文本 --></div>
+					<div class="lkyNo"><!-- 示例文本 --></div>
+				</div>
+				<div class="lkyScore">
+					<div id="finalScore"><!-- 6 --></div>
+					<div class="comment">评分</div>
+				</div>
+			</div>
+			<div class="right">
+				<ul class="history">
+					<li class="answer" v-for="(item,index) in list">
+						<span class="name">{{item.name}}</span>
+						<span class="score">{{item.score}}</span>
+					</li>
+					<!-- <li class="answer">
+						<span class="name">示例文本</span>
+						<span class="score">示例文本</span>
+					</li> -->
+				</ul>
+			</div>
+		</div>
+		<div style="width: 80px;
+		height: 50px;line-height:50px;text-align: center;background: #f40;color: #fff;position: absolute;right: 0;bottom: 0;cursor: pointer;" @click="clearStorage()">清除数据</div>
+		<div id="scoreWrap" style="display: none;">
+			<div class="scoreBox">
+				<div style="width: 190px;height: 200px;margin: 0 auto;">
+					<input id="addScore" type="text">
+					<div id="submitScore">提交分数</div>
+				</div>
+			</div>
+			<div id="info">
+				<span>Powered By 07-56</span>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="classStu.js"></script>
+	<script type="text/javascript" src="index_V.js"></script>
+	<!-- <script type="text/javascript" src="index.js"></script> -->
+</body>
+</html>
